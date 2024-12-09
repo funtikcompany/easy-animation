@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 1900;
+    padding: 0 8px;
+  }
+  
+  body {
+    line-height: 1.1;
+    background: #060C12;
+    font-family: "Nunito", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: transparent;
+    position: relative;
+    height: 100vh;
+    overflow-y: auto;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+  }
+  
+  button {
+    background: none;
+    cursor: pointer;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+
+  /*  */
+  .main {
+    margin: 0;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+  }
+
+  .palm-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+   }
+
+  .palm-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: none;
+   }
+
+  .main-title {
+    font-weight: 900;
+    font-size: 28px;
+    color: #234B0B;
+    margin-bottom: 40px;
+    text-align: center;
+    max-width: 1200px;
+    position: relative;
+    z-index: 10;
+  }
+
+  #scene {
+    max-width: 1200px;
+    height: 310px;
+    background: transparent;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .btn{
+    border-radius: 44px;
+    background: #F5FFEE;
+    transition: all .3s linear;
+    color:#1E1E1E;
+    padding: 10px 17px;
+    font-size: 16px;
+    font-weight: 800;
+  }
+  .btn + .btn {
+    margin-left: 10px;
+  }
+
+  .btn:hover{
+    background: #B7EB98;
+  }
+
+  .wrapper {
+    position: relative;
+  }
+
+  .btn-list {
+    position: absolute;
+    top:45px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 190000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+
+  
+
+@media screen and (min-width: 1024px) {
+  #scene {
+    height: 290px;
+  }
+
+  .palm-right {
+   display: block;
+  }
+
+  .main-title {
+    font-size: 54px;
+  }
+  
+
+  .btn{
+    padding: 15px 45px;
+    font-size: 24px;
+  }
+
+  .btn + .btn {
+    margin-left: 50px;
+  }
+
+}
